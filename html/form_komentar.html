@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form komentar</title>
+</head>
+<body>
+    <fieldset>
+    <legend>your details</legend><!--UNTUK PENGINPUTAN NAMA DAN EMAIL-->
+        <label for="Name">Name:</label>
+        <input type="text" name="Name" required="required" /></title><br />
+        <label for="Email">Email:</label>
+        <input type="text" name="Email" required="required" />
+    </fieldset>
+
+    <fieldset>
+        <legend>your review</legend><!--UNTUK TULISAN TEPAT DI GARIS-->
+
+        <p>select your browser!</p><!--UNTUK MEMILIH BROWSER-->
+        <select name="search" size="1" 
+        multiple="multiple">
+            <option value="search">mozila</option>
+            <option value="search">opera</option>
+            <option value="search" selected="selected">google</option>
+            <option value="search">chrome</option>
+            <option value="search">microsoft edge</option>
+            <option value="search">fire fox</option>
+        </select>
+
+        <p>would you visit again?<!--UNTUK "YOU  VISIT AGAIN?"-->
+            <br/>
+            <input type="checkbox" name="answer"
+            value="yes" />yes
+            <input type="checkbox" name="answer"
+            value="no" />no
+            <input type="checkbox" name="answer"
+            value="mybe" />mybe
+        </p>
+
+        <p>comments:</p><!--kolom untuk berkomentar-->
+        <textarea name="comments" cols="20" rows="4">enter your comments...
+        </textarea>
+        <br>
+
+        <input type="checkbox" name="EMAIL"value="EMAIL" />sign me for email updates<!--UNTUK CENTANG EMAIL UPDATES-->
+        <br>
+
+        <!--UNTUK TOMBOL SUBMIT-->
+        <input type="submit" value="submit review" />
+    </fieldset>
+</body>
+</html>
